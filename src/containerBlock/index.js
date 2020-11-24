@@ -71,7 +71,7 @@ registerBlockType("abhinash/container", {
 					style={{
 						background: computedBackground(),
 						backgroundSize: "cover",
-						backgroundRepeat: "none",
+						backgroundRepeat: "no-repeat",
 						color: props.attributes.textColor,
 					}}
 				>
@@ -105,7 +105,7 @@ registerBlockType("abhinash/container", {
 					background: computedBackground(),
 					color: props.attributes.textColor,
 					backgroundSize: "cover",
-					backgroundRepeat: "none",
+					backgroundRepeat: "no-repeat",
 				}}
 			>
 				<div className="container">

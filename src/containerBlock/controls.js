@@ -111,6 +111,16 @@ export default class ContainerControls extends Component {
 															)}
 														></MediaUpload>
 													</MediaUploadCheck>
+													{this.props.imageObj && (
+														<PanelRow>
+															<Button
+																onClick={() => this.handleUpdateImg({})}
+																isDestructive
+															>
+																Remove Image
+															</Button>
+														</PanelRow>
+													)}
 												</div>
 											)}
 										</div>
