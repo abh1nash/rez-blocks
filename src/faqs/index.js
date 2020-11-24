@@ -86,7 +86,20 @@ registerBlockType("abhinash/faqs", {
 			setAttributes({ questions: updatedQuestions });
 			generateSchema();
 		};
-
+		const handleAddQuestion = (index) => {
+			let updatedQuestions = [...attributes.questions];
+			updatedQuestions.splice(index + 1, 0, {
+				q: "",
+				a: "",
+				id: "q-" + shortid.generate(),
+			});
+			setAttributes({ questions: updatedQuestions });
+		};
+		const handleRemoveQuestion = (index) => {
+			let updatedQuestions = [...attributes.questions];
+			updatedQuestions.splice(index, 1);
+			setAttributes({ questions: updatedQuestions });
+		};
 		return (
 			<div>
 				{
@@ -118,13 +131,24 @@ registerBlockType("abhinash/faqs", {
 					{attributes.questions.length > 0 &&
 						attributes.questions.map((question, index) => {
 							return (
-								<div className="editor-faq-item">
+								<div className="editor-faq-item" key={index}>
 									<div className="editor-faq-header">
-										<RichText
-											value={question.q}
-											onChange={(value) => setQuestion(index, value)}
-											placeholder="Type question here..."
-										/>
+										<div className="editable-header">
+											<RichText
+												value={question.q}
+												onChange={(value) => setQuestion(index, value)}
+												placeholder="Type question here..."
+											/>
+										</div>
+										<div className="editor-remove-faq-item-container">
+											<button
+												onClick={() => handleRemoveQuestion(index)}
+												className="editor-remove-faq-item"
+												title="Remove Question"
+											>
+												&times;
+											</button>
+										</div>
 									</div>
 									<div className="editor-faq-expand-item">
 										<RichText
@@ -133,6 +157,15 @@ registerBlockType("abhinash/faqs", {
 											placeholder="Type answer here..."
 											selector="p"
 										/>
+										<div className="editor-add-faq-item-container">
+											<button
+												onClick={() => handleAddQuestion(index)}
+												className="editor-add-faq-item"
+												title="Add Question"
+											>
+												+
+											</button>
+										</div>
 									</div>
 								</div>
 							);

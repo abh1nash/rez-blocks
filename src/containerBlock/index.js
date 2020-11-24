@@ -2,15 +2,8 @@ import "./editor.scss";
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
-import { InnerBlocks, InspectorControls } from "@wordpress/block-editor";
-import {
-	__experimentalGradientPicker as GradientPicker,
-	Panel,
-	PanelBody,
-	PanelRow,
-	ColorPalette,
-} from "@wordpress/components";
-import colors from "../colors.json";
+import { InnerBlocks } from "@wordpress/block-editor";
+import ContainerControls from "./controls";
 
 registerBlockType("abhinash/container", {
 	title: __("Layout Container"), // Block title.
@@ -22,6 +15,8 @@ registerBlockType("abhinash/container", {
 	attributes: {
 		bgColor: { type: "string" },
 		textColor: { type: "string" },
+		gradient: { type: "string" },
+		imageObj: { type: "object" },
 		align: {
 			type: "string",
 			default: "full",
@@ -37,40 +32,45 @@ registerBlockType("abhinash/container", {
 		const handleBgColorChange = (color) => {
 			props.setAttributes({ bgColor: color });
 		};
+		const handleGradientChange = (gradient) => {
+			props.setAttributes({ gradient: gradient });
+		};
+		const handleImageChange = (obj) => {
+			props.setAttributes({ imageObj: obj });
+		};
+		const computedBackground = () => {
+			if (
+				props.attributes.gradient ||
+				(props.attributes.imageObj && props.attributes.imageObj.url)
+			) {
+				const { gradient } = props.attributes;
+				const { url } = props.attributes.imageObj
+					? props.attributes.imageObj
+					: {};
+
+				if (gradient && url) return `${gradient}, url(${url})`;
+				if (!gradient && url) return `url(${url})`;
+			}
+			return props.attributes.gradient || props.attributes.bgColor;
+		};
 		return (
 			<div>
-				{
-					<InspectorControls>
-						<Panel title="Layout Container Settings">
-							<PanelBody
-								title="Options"
-								icon="admin-settings"
-								initialOpen={true}
-							>
-								<PanelRow>Text color</PanelRow>
-								<PanelRow>
-									<ColorPalette
-										colors={colors}
-										value={props.attributes.textColor}
-										onChange={handleTextColorChange}
-									/>
-								</PanelRow>
-								<PanelRow>Background color</PanelRow>
-								<PanelRow>
-									<ColorPalette
-										colors={colors}
-										value={props.attributes.bgColor}
-										onChange={handleBgColorChange}
-									/>
-								</PanelRow>
-							</PanelBody>
-						</Panel>
-					</InspectorControls>
-				}{" "}
+				<ContainerControls
+					imageObj={props.attributes.imageObj}
+					textColor={props.attributes.textColor}
+					bgColor={props.attributes.bgColor}
+					imageObj={props.attributes.imageObj}
+					onImageChange={handleImageChange}
+					onGradientChange={handleGradientChange}
+					onBgColorChange={handleBgColorChange}
+					onTextColorChange={handleTextColorChange}
+				/>
 				<div
 					className={props.className + " container-wrapper"}
 					style={{
-						backgroundColor: props.attributes.bgColor,
+						background: computedBackground(),
+						backgroundSize: "cover",
+						backgroundRepeat: "none",
 						color: props.attributes.textColor,
 					}}
 				>
@@ -82,12 +82,29 @@ registerBlockType("abhinash/container", {
 		);
 	},
 	save: (props) => {
+		const computedBackground = () => {
+			if (
+				props.attributes.gradient ||
+				(props.attributes.imageObj && props.attributes.imageObj.url)
+			) {
+				const { gradient } = props.attributes;
+				const { url } = props.attributes.imageObj
+					? props.attributes.imageObj
+					: {};
+
+				if (gradient && url) return `${gradient}, url(${url})`;
+				if (!gradient && url) return `url(${url})`;
+			}
+			return props.attributes.gradient || props.attributes.bgColor;
+		};
 		return (
 			<div
-				className={props.className}
+				className={props.className + " py-5"}
 				style={{
-					backgroundColor: props.attributes.bgColor,
+					background: computedBackground(),
 					color: props.attributes.textColor,
+					backgroundSize: "cover",
+					backgroundRepeat: "none",
 				}}
 			>
 				<div className="container">
