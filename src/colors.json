@@ -1,0 +1,12 @@
+[
+    {"name":"Primary", "color": "#77cfe7"},
+	{"name":"Secondary", "color": "#009dc8"},
+	{"name":"Tertiary", "color": "#015989"},
+	{"name":"Accent", "color": "#fac000"},
+	{"name":"Light", "color": "#f5f5f5"},
+	{"name":"Dark", "color": "#303030"},
+	{"name":"Success", "color": "#0a8754"},
+	{"name":"Danger", "color": "#db504a"},
+	{"name":"Info", "color": "#3992ac"},
+	{"name":"Warning", "color": "#faf33e"}
+]

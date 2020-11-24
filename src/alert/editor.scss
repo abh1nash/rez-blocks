@@ -1,0 +1,37 @@
+$background-shift: -80%;
+$border-shift: -70%;
+$color-shift: 40%;
+
+@function tint-color($color, $weight) {
+	@return mix(white, $color, $weight);
+}
+
+@function shade-color($color, $weight) {
+	@return mix(black, $color, $weight);
+}
+
+@function shift-color($color, $weight) {
+	@return if(
+		$weight > 0,
+		shade-color($color, $weight),
+		tint-color($color, -$weight)
+	);
+}
+
+.editor-alert {
+	position: relative;
+	padding: 0.75rem 1.25rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+
+	&.editor-alert-type- {
+		@each $name, $color in $theme-colors {
+			&#{$name} {
+				background: shift-color($color, $background-shift);
+				border-color: shift-color($color, $border-shift);
+				color: shift-color($color, $color-shift);
+			}
+		}
+	}
+}

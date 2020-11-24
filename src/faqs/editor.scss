@@ -1,0 +1,16 @@
+.editor-faqs-list {
+	box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.15);
+	.editor-faq-item {
+		display: block;
+		.editor-faq-header {
+			padding: 10px 20px;
+			background: rgba(0, 0, 0, 0.025);
+			color: map-get($map: $theme-colors, $key: primary);
+			font-weight: bold;
+		}
+		.editor-faq-expand-item {
+			border-top: 1px solid rgba(0, 0, 0, 0.05);
+			padding: 10px 20px;
+		}
+	}
+}

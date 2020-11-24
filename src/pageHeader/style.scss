@@ -1,0 +1,21 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.atf-hero {
+	height: 20em;
+	@media (min-width: 992px) {
+		height: 35em;
+		background: linear-gradient(
+				to right,
+				rgba(255, 255, 255, 1) 30%,
+				rgba(255, 255, 255, 0) 90%
+			),
+			var(--bg-img);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}

@@ -1,0 +1,62 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+// Colors.
+$theme-colors: (
+	primary: #77cfe7,
+	secondary: #009dc8,
+	tertiary: #015989,
+	accent: #fac000,
+	light-grey: #f5f5f5,
+	nav-color: #deefef,
+	dark: #303030,
+	altLight: #7b90a1,
+	shadow: rgba(0, 0, 0, 0.15),
+	success: #0a8754,
+	danger: #db504a,
+	red-1: #fbd3c9,
+	info: #3992ac,
+	warning: #faf33e,
+);
+
+@each $name, $color in $theme-colors {
+	.has-#{$name}-color {
+		color: $color;
+	}
+}
+
+.container-wrapper {
+	padding: 15px;
+	.editor-container-display {
+		width: 1170px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+
+.cta-btn {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #fff;
+	background: map-get($map: $theme-colors, $key: accent);
+	text-transform: uppercase;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+
+.editor-placeholder-text {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 1.3em;
+}
+
+.wp-block {
+	&.is-reusable {
+		max-width: none;
+		width: 100%;
+	}
+}
