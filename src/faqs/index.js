@@ -12,6 +12,7 @@ import {
 	Panel,
 	PanelBody,
 	PanelRow,
+	FormToggle,
 } from "@wordpress/components";
 
 import "./editor.scss";
@@ -27,6 +28,7 @@ registerBlockType("abhinash/faqs", {
 		questions: { type: "array", default: [] },
 		schema: { type: "string" },
 		containerId: { type: "string" },
+		hasSchema: { type: "boolean", default: true },
 	},
 
 	edit: ({ attributes, setAttributes }) => {
@@ -100,6 +102,9 @@ registerBlockType("abhinash/faqs", {
 			updatedQuestions.splice(index, 1);
 			setAttributes({ questions: updatedQuestions });
 		};
+		const handleSchemaToggle = () => {
+			setAttributes({ hasSchema: !attributes.hasSchema });
+		};
 		return (
 			<div>
 				{
@@ -116,6 +121,15 @@ registerBlockType("abhinash/faqs", {
 										value={attributes.questions.length}
 										onChange={setQuestionsCount}
 									/>
+								</PanelRow>
+							</PanelBody>
+							<PanelBody title="SEO" icon="search" initialOpen={false}>
+								<PanelRow>
+									<FormToggle
+										checked={attributes.hasSchema}
+										onChange={handleSchemaToggle}
+									/>
+									Generate rich results schema
 								</PanelRow>
 							</PanelBody>
 						</Panel>
@@ -178,7 +192,9 @@ registerBlockType("abhinash/faqs", {
 	save: ({ attributes }) => {
 		return (
 			<div>
-				<script type="application/ld+json">{attributes.schema}</script>
+				{attributes.hasSchema && (
+					<script type="application/ld+json">{attributes.schema}</script>
+				)}
 				<div className="accordion my-3" id={attributes.containerId}>
 					{attributes.questions.map((question) => {
 						const { q, a, id } = question;

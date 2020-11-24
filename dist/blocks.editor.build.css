@@ -1,4 +1,474 @@
-.has-primary-color{color:#77cfe7}.has-secondary-color{color:#009dc8}.has-tertiary-color{color:#015989}.has-accent-color{color:#fac000}.has-light-grey-color{color:#f5f5f5}.has-nav-color-color{color:#deefef}.has-dark-color{color:#303030}.has-altLight-color{color:#7b90a1}.has-shadow-color{color:rgba(0,0,0,0.15)}.has-success-color{color:#0a8754}.has-danger-color{color:#db504a}.has-red-1-color{color:#fbd3c9}.has-info-color{color:#3992ac}.has-warning-color{color:#faf33e}.container-wrapper{padding:15px}.container-wrapper .editor-container-display{width:1170px;max-width:100%;margin:0 auto}.cta-btn{font-size:1.2em;font-weight:bold;color:#fff;background:#fac000;text-transform:uppercase;padding:10px;border-radius:5px;margin-top:15px}.editor-placeholder-text{color:rgba(0,0,0,0.3);font-size:1.3em}.wp-block.is-reusable{max-width:none;width:100%}*{font-family:sans-serif}.atf-hero .container{margin:0 auto;width:1170px;max-width:100%;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;-ms-flex-direction:column;flex-direction:column;height:100%}.atf-hero .container .row{width:100%}.atf-hero .container .row .col-lg-6{width:50%}.atf-hero .atf-hero-content{height:100%}.atf-hero .atf-hero-content .cta-btn{font-size:1.2em;font-weight:bold;color:#fff;background:#fac000;text-transform:uppercase;padding:10px;border-radius:5px;margin-top:15px}.atf-hero .atf-hero-content .cta-desc{padding:20px 0;font-family:sans-serif;font-size:1.2em;font-weight:lighter}.atf-hero .atf-hero-content .cta-title{font-family:sans-serif;color:#77cfe7 !important;margin:0;line-height:1.1em}.image-selector-btn{position:relative;background-size:cover}.image-selector-btn:hover{background-size:cover}.image-selector-preview{position:absolute;top:0;left:0;width:100%;height:100%}
-.has-primary-color{color:#77cfe7}.has-secondary-color{color:#009dc8}.has-tertiary-color{color:#015989}.has-accent-color{color:#fac000}.has-light-grey-color{color:#f5f5f5}.has-nav-color-color{color:#deefef}.has-dark-color{color:#303030}.has-altLight-color{color:#7b90a1}.has-shadow-color{color:rgba(0,0,0,0.15)}.has-success-color{color:#0a8754}.has-danger-color{color:#db504a}.has-red-1-color{color:#fbd3c9}.has-info-color{color:#3992ac}.has-warning-color{color:#faf33e}.container-wrapper{padding:15px}.container-wrapper .editor-container-display{width:1170px;max-width:100%;margin:0 auto}.cta-btn{font-size:1.2em;font-weight:bold;color:#fff;background:#fac000;text-transform:uppercase;padding:10px;border-radius:5px;margin-top:15px}.editor-placeholder-text{color:rgba(0,0,0,0.3);font-size:1.3em}.wp-block.is-reusable{max-width:none;width:100%}.container-wrapper{padding:15px}.container-wrapper .editor-container-display{width:1170px;max-width:100%;margin:0 auto}
-.has-primary-color{color:#77cfe7}.has-secondary-color{color:#009dc8}.has-tertiary-color{color:#015989}.has-accent-color{color:#fac000}.has-light-grey-color{color:#f5f5f5}.has-nav-color-color{color:#deefef}.has-dark-color{color:#303030}.has-altLight-color{color:#7b90a1}.has-shadow-color{color:rgba(0,0,0,0.15)}.has-success-color{color:#0a8754}.has-danger-color{color:#db504a}.has-red-1-color{color:#fbd3c9}.has-info-color{color:#3992ac}.has-warning-color{color:#faf33e}.container-wrapper{padding:15px}.container-wrapper .editor-container-display{width:1170px;max-width:100%;margin:0 auto}.cta-btn{font-size:1.2em;font-weight:bold;color:#fff;background:#fac000;text-transform:uppercase;padding:10px;border-radius:5px;margin-top:15px}.editor-placeholder-text{color:rgba(0,0,0,0.3);font-size:1.3em}.wp-block.is-reusable{max-width:none;width:100%}.editor-alert{position:relative;padding:0.75rem 1.25rem;margin-bottom:1rem;border:1px solid transparent;border-radius:0.25rem}.editor-alert.editor-alert-type-primary{background:#e4f5fa;border-color:#d6f1f8;color:#477c8b}.editor-alert.editor-alert-type-secondary{background:#ccebf4;border-color:#b3e2ef;color:#005e78}.editor-alert.editor-alert-type-tertiary{background:#ccdee7;border-color:#b3cddc;color:#013552}.editor-alert.editor-alert-type-accent{background:#fef2cc;border-color:#feecb3;color:#967300}.editor-alert.editor-alert-type-light-grey{background:#fdfdfd;border-color:#fcfcfc;color:#939393}.editor-alert.editor-alert-type-nav-color{background:#f8fcfc;border-color:#f5fafa;color:#858f8f}.editor-alert.editor-alert-type-dark{background:#d6d6d6;border-color:#c1c1c1;color:#1d1d1d}.editor-alert.editor-alert-type-altLight{background:#e5e9ec;border-color:#d7dee3;color:#4a5661}.editor-alert.editor-alert-type-shadow{background:rgba(250,250,250,0.83);border-color:rgba(246,246,246,0.745);color:rgba(0,0,0,0.49)}.editor-alert.editor-alert-type-success{background:#cee7dd;border-color:#b6dbcc;color:#065132}.editor-alert.editor-alert-type-danger{background:#f8dcdb;border-color:#f4cbc9;color:#83302c}.editor-alert.editor-alert-type-red-1{background:#fef6f4;border-color:#fef2ef;color:#977f79}.editor-alert.editor-alert-type-info{background:#d7e9ee;border-color:#c4dee6;color:#225867}.editor-alert.editor-alert-type-warning{background:#fefdd8;border-color:#fefbc5;color:#969225}
-.has-primary-color{color:#77cfe7}.has-secondary-color{color:#009dc8}.has-tertiary-color{color:#015989}.has-accent-color{color:#fac000}.has-light-grey-color{color:#f5f5f5}.has-nav-color-color{color:#deefef}.has-dark-color{color:#303030}.has-altLight-color{color:#7b90a1}.has-shadow-color{color:rgba(0,0,0,0.15)}.has-success-color{color:#0a8754}.has-danger-color{color:#db504a}.has-red-1-color{color:#fbd3c9}.has-info-color{color:#3992ac}.has-warning-color{color:#faf33e}.container-wrapper{padding:15px}.container-wrapper .editor-container-display{width:1170px;max-width:100%;margin:0 auto}.cta-btn{font-size:1.2em;font-weight:bold;color:#fff;background:#fac000;text-transform:uppercase;padding:10px;border-radius:5px;margin-top:15px}.editor-placeholder-text{color:rgba(0,0,0,0.3);font-size:1.3em}.wp-block.is-reusable{max-width:none;width:100%}.editor-faqs-list{-webkit-box-shadow:0 3px 10px 0px rgba(0,0,0,0.15);box-shadow:0 3px 10px 0px rgba(0,0,0,0.15)}.editor-faqs-list .editor-faq-item{display:block}.editor-faqs-list .editor-faq-item .editor-faq-header{padding:10px 20px;background:#f5f5f5;color:#77cfe7;font-weight:bold;display:-ms-flexbox;display:flex}.editor-faqs-list .editor-faq-item .editor-faq-header .editable-header{width:90%}.editor-faqs-list .editor-faq-item .editor-faq-header:hover .editor-remove-faq-item-container .editor-remove-faq-item{display:block}.editor-faqs-list .editor-faq-item .editor-faq-header .editor-remove-faq-item-container{width:10%;text-align:center}.editor-faqs-list .editor-faq-item .editor-faq-header .editor-remove-faq-item-container .editor-remove-faq-item{display:none;margin:0 auto;background:transparent;border:1px solid #db504a;color:#db504a;cursor:pointer;border-radius:5px}.editor-faqs-list .editor-faq-item .editor-faq-header .editor-remove-faq-item-container .editor-remove-faq-item:hover{background:#db504a;color:#fff}.editor-faqs-list .editor-faq-item .editor-faq-expand-item{border-top:1px solid #e0e0e0;padding:10px 20px 30px 20px;background:#fefefe;position:relative}.editor-faqs-list .editor-faq-item .editor-faq-expand-item .editor-add-faq-item-container{position:absolute;bottom:0;height:2em;width:100%}.editor-faqs-list .editor-faq-item .editor-faq-expand-item .editor-add-faq-item-container:hover .editor-add-faq-item{display:block}.editor-faqs-list .editor-faq-item .editor-faq-expand-item .editor-add-faq-item-container .editor-add-faq-item{display:none;background:#0a8754;color:#fff;height:1.5em;border:none;cursor:pointer;margin:0 auto;border-radius:5px}.editor-faqs-list .editor-faq-item .editor-faq-expand-item .editor-add-faq-item-container .editor-add-faq-item:hover{background:#0eb672}
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.has-primary-color {
+  color: #77cfe7; }
+
+.has-secondary-color {
+  color: #009dc8; }
+
+.has-tertiary-color {
+  color: #015989; }
+
+.has-accent-color {
+  color: #fac000; }
+
+.has-light-grey-color {
+  color: #f5f5f5; }
+
+.has-nav-color-color {
+  color: #deefef; }
+
+.has-dark-color {
+  color: #303030; }
+
+.has-altLight-color {
+  color: #7b90a1; }
+
+.has-shadow-color {
+  color: rgba(0, 0, 0, 0.15); }
+
+.has-success-color {
+  color: #0a8754; }
+
+.has-danger-color {
+  color: #db504a; }
+
+.has-red-1-color {
+  color: #fbd3c9; }
+
+.has-info-color {
+  color: #3992ac; }
+
+.has-warning-color {
+  color: #faf33e; }
+
+.container-wrapper {
+  padding: 15px; }
+  .container-wrapper .editor-container-display {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto; }
+
+.cta-btn {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  background: #fac000;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px; }
+
+.editor-placeholder-text {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1.3em; }
+
+.wp-block.is-reusable {
+  max-width: none;
+  width: 100%; }
+
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+* {
+  font-family: sans-serif; }
+
+.atf-hero .container {
+  margin: 0 auto;
+  width: 1170px;
+  max-width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%; }
+  .atf-hero .container .row {
+    width: 100%; }
+    .atf-hero .container .row .col-lg-6 {
+      width: 50%; }
+
+.atf-hero .atf-hero-content {
+  height: 100%; }
+  .atf-hero .atf-hero-content .cta-btn {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background: #fac000;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px; }
+  .atf-hero .atf-hero-content .cta-desc {
+    padding: 20px 0;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter; }
+  .atf-hero .atf-hero-content .cta-title {
+    font-family: sans-serif;
+    color: #77cfe7 !important;
+    margin: 0;
+    line-height: 1.1em; }
+
+.image-selector-btn {
+  position: relative;
+  background-size: cover; }
+  .image-selector-btn:hover {
+    background-size: cover; }
+
+.image-selector-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.has-primary-color {
+  color: #77cfe7; }
+
+.has-secondary-color {
+  color: #009dc8; }
+
+.has-tertiary-color {
+  color: #015989; }
+
+.has-accent-color {
+  color: #fac000; }
+
+.has-light-grey-color {
+  color: #f5f5f5; }
+
+.has-nav-color-color {
+  color: #deefef; }
+
+.has-dark-color {
+  color: #303030; }
+
+.has-altLight-color {
+  color: #7b90a1; }
+
+.has-shadow-color {
+  color: rgba(0, 0, 0, 0.15); }
+
+.has-success-color {
+  color: #0a8754; }
+
+.has-danger-color {
+  color: #db504a; }
+
+.has-red-1-color {
+  color: #fbd3c9; }
+
+.has-info-color {
+  color: #3992ac; }
+
+.has-warning-color {
+  color: #faf33e; }
+
+.container-wrapper {
+  padding: 15px; }
+  .container-wrapper .editor-container-display {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto; }
+
+.cta-btn {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  background: #fac000;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px; }
+
+.editor-placeholder-text {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1.3em; }
+
+.wp-block.is-reusable {
+  max-width: none;
+  width: 100%; }
+
+.container-wrapper {
+  padding: 15px; }
+  .container-wrapper .editor-container-display {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.has-primary-color {
+  color: #77cfe7; }
+
+.has-secondary-color {
+  color: #009dc8; }
+
+.has-tertiary-color {
+  color: #015989; }
+
+.has-accent-color {
+  color: #fac000; }
+
+.has-light-grey-color {
+  color: #f5f5f5; }
+
+.has-nav-color-color {
+  color: #deefef; }
+
+.has-dark-color {
+  color: #303030; }
+
+.has-altLight-color {
+  color: #7b90a1; }
+
+.has-shadow-color {
+  color: rgba(0, 0, 0, 0.15); }
+
+.has-success-color {
+  color: #0a8754; }
+
+.has-danger-color {
+  color: #db504a; }
+
+.has-red-1-color {
+  color: #fbd3c9; }
+
+.has-info-color {
+  color: #3992ac; }
+
+.has-warning-color {
+  color: #faf33e; }
+
+.container-wrapper {
+  padding: 15px; }
+  .container-wrapper .editor-container-display {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto; }
+
+.cta-btn {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  background: #fac000;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px; }
+
+.editor-placeholder-text {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1.3em; }
+
+.wp-block.is-reusable {
+  max-width: none;
+  width: 100%; }
+
+.editor-alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem; }
+  .editor-alert.editor-alert-type-primary {
+    background: #e4f5fa;
+    border-color: #d6f1f8;
+    color: #477c8b; }
+  .editor-alert.editor-alert-type-secondary {
+    background: #ccebf4;
+    border-color: #b3e2ef;
+    color: #005e78; }
+  .editor-alert.editor-alert-type-tertiary {
+    background: #ccdee7;
+    border-color: #b3cddc;
+    color: #013552; }
+  .editor-alert.editor-alert-type-accent {
+    background: #fef2cc;
+    border-color: #feecb3;
+    color: #967300; }
+  .editor-alert.editor-alert-type-light-grey {
+    background: #fdfdfd;
+    border-color: #fcfcfc;
+    color: #939393; }
+  .editor-alert.editor-alert-type-nav-color {
+    background: #f8fcfc;
+    border-color: #f5fafa;
+    color: #858f8f; }
+  .editor-alert.editor-alert-type-dark {
+    background: #d6d6d6;
+    border-color: #c1c1c1;
+    color: #1d1d1d; }
+  .editor-alert.editor-alert-type-altLight {
+    background: #e5e9ec;
+    border-color: #d7dee3;
+    color: #4a5661; }
+  .editor-alert.editor-alert-type-shadow {
+    background: rgba(250, 250, 250, 0.83);
+    border-color: rgba(246, 246, 246, 0.745);
+    color: rgba(0, 0, 0, 0.49); }
+  .editor-alert.editor-alert-type-success {
+    background: #cee7dd;
+    border-color: #b6dbcc;
+    color: #065132; }
+  .editor-alert.editor-alert-type-danger {
+    background: #f8dcdb;
+    border-color: #f4cbc9;
+    color: #83302c; }
+  .editor-alert.editor-alert-type-red-1 {
+    background: #fef6f4;
+    border-color: #fef2ef;
+    color: #977f79; }
+  .editor-alert.editor-alert-type-info {
+    background: #d7e9ee;
+    border-color: #c4dee6;
+    color: #225867; }
+  .editor-alert.editor-alert-type-warning {
+    background: #fefdd8;
+    border-color: #fefbc5;
+    color: #969225; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.has-primary-color {
+  color: #77cfe7; }
+
+.has-secondary-color {
+  color: #009dc8; }
+
+.has-tertiary-color {
+  color: #015989; }
+
+.has-accent-color {
+  color: #fac000; }
+
+.has-light-grey-color {
+  color: #f5f5f5; }
+
+.has-nav-color-color {
+  color: #deefef; }
+
+.has-dark-color {
+  color: #303030; }
+
+.has-altLight-color {
+  color: #7b90a1; }
+
+.has-shadow-color {
+  color: rgba(0, 0, 0, 0.15); }
+
+.has-success-color {
+  color: #0a8754; }
+
+.has-danger-color {
+  color: #db504a; }
+
+.has-red-1-color {
+  color: #fbd3c9; }
+
+.has-info-color {
+  color: #3992ac; }
+
+.has-warning-color {
+  color: #faf33e; }
+
+.container-wrapper {
+  padding: 15px; }
+  .container-wrapper .editor-container-display {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto; }
+
+.cta-btn {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  background: #fac000;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px; }
+
+.editor-placeholder-text {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1.3em; }
+
+.wp-block.is-reusable {
+  max-width: none;
+  width: 100%; }
+
+.editor-faqs-list {
+  -webkit-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.15); }
+  .editor-faqs-list .editor-faq-item {
+    display: block; }
+    .editor-faqs-list .editor-faq-item .editor-faq-header {
+      padding: 10px 20px;
+      background: #f5f5f5;
+      color: #77cfe7;
+      font-weight: bold;
+      display: -ms-flexbox;
+      display: flex; }
+      .editor-faqs-list .editor-faq-item .editor-faq-header .editable-header {
+        width: 90%; }
+      .editor-faqs-list .editor-faq-item .editor-faq-header:hover .editor-remove-faq-item-container .editor-remove-faq-item {
+        display: block; }
+      .editor-faqs-list .editor-faq-item .editor-faq-header .editor-remove-faq-item-container {
+        width: 10%;
+        text-align: center; }
+        .editor-faqs-list .editor-faq-item .editor-faq-header .editor-remove-faq-item-container .editor-remove-faq-item {
+          display: none;
+          margin: 0 auto;
+          background: transparent;
+          border: 1px solid #db504a;
+          color: #db504a;
+          cursor: pointer;
+          border-radius: 5px; }
+          .editor-faqs-list .editor-faq-item .editor-faq-header .editor-remove-faq-item-container .editor-remove-faq-item:hover {
+            background: #db504a;
+            color: #fff; }
+    .editor-faqs-list .editor-faq-item .editor-faq-expand-item {
+      border-top: 1px solid #e0e0e0;
+      padding: 10px 20px 30px 20px;
+      background: #fefefe;
+      position: relative; }
+      .editor-faqs-list .editor-faq-item .editor-faq-expand-item .editor-add-faq-item-container {
+        position: absolute;
+        bottom: 0;
+        height: 2em;
+        width: 100%; }
+        .editor-faqs-list .editor-faq-item .editor-faq-expand-item .editor-add-faq-item-container:hover .editor-add-faq-item {
+          display: block; }
+        .editor-faqs-list .editor-faq-item .editor-faq-expand-item .editor-add-faq-item-container .editor-add-faq-item {
+          display: none;
+          background: #0a8754;
+          color: #fff;
+          height: 1.5em;
+          border: none;
+          cursor: pointer;
+          margin: 0 auto;
+          border-radius: 5px; }
+          .editor-faqs-list .editor-faq-item .editor-faq-expand-item .editor-add-faq-item-container .editor-add-faq-item:hover {
+            background: #0eb672; }

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: REZ Blocks
  * Plugin URI: http://abhinash.net/
- * Version: 1.0.0.1
+ * Version: 1.0.0.2
  * Description: Custom blocks for REZ
  * Author: Abhinash Khatiwada
  * Author URI: https://abhinash.net/
