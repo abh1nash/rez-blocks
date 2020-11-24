@@ -60,6 +60,7 @@ registerBlockType("abhinash/container", {
 					textColor={props.attributes.textColor}
 					bgColor={props.attributes.bgColor}
 					imageObj={props.attributes.imageObj}
+					bgGradient={props.attributes.gradient}
 					onImageChange={handleImageChange}
 					onGradientChange={handleGradientChange}
 					onBgColorChange={handleBgColorChange}
